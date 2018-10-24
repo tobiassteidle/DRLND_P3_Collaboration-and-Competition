@@ -1,3 +1,6 @@
+## Solution Video
+[![Project 3: Collaboration and Competition](http://img.youtube.com/vi/27tCaTiYWx8/0.jpg)](https://www.youtube.com/watch?v=27tCaTiYWx8 "Project 3: Collaboration and Competition")
+
 ## Learning Algorithm
 
 My learning algorithm is a Deep Deterministic Policy Gradient.  
@@ -27,33 +30,29 @@ More general information about DDPG in [this](https://arxiv.org/pdf/1509.02971.p
 Parameter | Value
 --- | ---
 replay buffer size | int(1e6)
-minibatch size | 256
+minibatch size | 1024
 discount factor | 0.99  
 tau (soft update) | 1e-3
-learning rate actor | 1e-3
+learning rate actor | 1e-4
 learning rate critic | 1e-3
 L2 weight decay | 0
-epsilon | 1.0
-epsilon decay | 1e-6
+update every steps | 20
+update per step | 10
+
 
 ### Plot of Rewards
 
 Episodes | Average Score | Max | Min | Time
 --- | --- | --- | --- | ---
 ... | ... | ... | ... | ...
-Episode 181 | Average Score: 33.59 | Max: 39.64 | Min: 30.34 | Time: 23.88
-Episode 182 | Average Score: 33.76 | Max: 39.45 | Min: 30.88 | Time: 23.98
-Episode 183 | Average Score: 33.92 | Max: 38.23 | Min: 20.35 | Time: 23.96
-Episode 184 | Average Score: 34.08 | Max: 38.29 | Min: 27.17 | Time: 23.83
-Episode 185 | Average Score: 34.24 | Max: 39.54 | Min: 30.72 | Time: 23.93
-Episode 186 | Average Score: 34.40 | Max: 39.38 | Min: 34.30 | Time: 23.97
-Episode 187 | Average Score: 34.55 | Max: 39.53 | Min: 34.66 | Time: 23.94
-Episode 188 | Average Score: 34.69 | Max: 39.40 | Min: 31.07 | Time: 24.11
-Episode 189 | Average Score: 34.85 | Max: 39.59 | Min: 33.47 | Time: 24.00
-Episode 190 | Average Score: 35.00 | Max: 39.47 | Min: 30.89 | Time: 24.00
-Episode 190	| Average Score: 35.00 | | |  
+Episode 1800 | Average Score: 0.20 | Max: 0.10 |  Min: -0.01 | Time: 1.56
+Episode 1810 | Average Score: 0.20 | Max: 0.20 |   Min: 0.09 | Time: 3.06
+Episode 1820 | Average Score: 0.20 | Max: 0.10 |  Min: -0.01 | Time: 0.81
+Episode 1830 | Average Score: 0.25 | Max: 2.10 |   Min: 2.09 | Time: 31.86
+Episode 1840 | Average Score: 0.35 | Max: 0.70 |   Min: 0.69 | Time: 11.76
+Episode 1850 | Average Score: 0.45 | Max: 0.60 |   Min: 0.49 | Time: 8.61
 
-Environment solved in 190 episodes!	Average Score: 35.00
+Environment solved in 1858 episodes!	Average Score: 0.51
 
 ![Solution](report/Score_Plot.png)
 
