@@ -60,6 +60,10 @@ Environment solved in 1858 episodes!	Average Score: 0.51
 
 - Change network sizes and choose different hyperparameters
 - Trying other algorithms like PPO, A3C or D4PG
+- Use parameter space noise rather than noise on action. https://vimeo.com/252185862
+- Current our replay buffer is dumb. We can use prioritised experience buffer. https://github.com/Damcy/prioritized-experience-replay
+- Different replay buffer for actor/critic
+- Try adding dropouts in critic network
   
 
 
